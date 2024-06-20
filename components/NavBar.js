@@ -5,28 +5,28 @@ export default function NavBar() {
     <nav>
       <ul>
         <li>
-          <Link href="/">
-            <a className="text-white">Home</a>
+          <Link href="/" className="text-white">
+            Home
           </Link>
         </li>
         <li>
-          <Link href="/about">
-            <a className="text-white">About</a>
+          <Link href="/about" className="text-white">
+            About
           </Link>
         </li>
         <li>
-          <Link href="/skills">
-            <a className="text-white">Skills</a>
+          <Link href="/skills" className="text-white">
+            Skills
           </Link>
         </li>
         <li>
-          <Link href="/projects">
-            <a className="text-white">Projects</a>
+          <Link href="/projects" className="text-white">
+            Projects
           </Link>
         </li>
         <li>
-          <Link href="/contact">
-            <a className="text-white">Contact</a>
+          <Link href="/contact" className="text-white">
+            Contact
           </Link>
         </li>
       </ul>
