@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -39,6 +40,13 @@ export default function About() {
               a big sports fan: soccer, hockey, basketball, football, and
               baseball.
             </p>
+          </div>
+          <div className="flex justify-center mt-4">
+            <Link href="/skills">
+              <button className="bg-blue-600 text-white py-2 px-4 rounded-full text-lg sm:text-xl md:text-2xl hover:bg-blue-700">
+                View My Skills
+              </button>
+            </Link>
           </div>
         </div>
       </section>
