@@ -25,9 +25,9 @@ export default function Contact() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 py-10">
+    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 py-10 px-4">
       <section className="max-w-4xl w-full mb-10 p-6 bg-white rounded-lg shadow-md">
-        <h2 className="text-5xl font-bold mb-6 text-gray-800 text-center">
+        <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-gray-800 text-center">
           Contact Me
         </h2>
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -101,7 +101,7 @@ export default function Contact() {
           >
             <a target="_blank" rel="noopener noreferrer">
               <svg
-                className="w-8 h-8 text-gray-600 hover:text-gray-800"
+                className="w-8 h-8 sm:w-10 sm:h-10 text-gray-600 hover:text-gray-800"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -113,7 +113,7 @@ export default function Contact() {
           <Link href="https://github.com/tatsuyax25" legacyBehavior>
             <a target="_blank" rel="noopener noreferrer">
               <svg
-                className="w-8 h-8 text-gray-600 hover:text-gray-800"
+                className="w-8 h-8 sm:w-10 sm:h-10 text-gray-600 hover:text-gray-800"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

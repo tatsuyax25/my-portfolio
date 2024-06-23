@@ -48,7 +48,6 @@ export default function Skills() {
             <li>Trello</li>
             <li>VSCode</li>
             <li>Apple</li>
-            <li>XD</li>
           </ul>
         </div>
 

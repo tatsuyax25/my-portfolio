@@ -20,25 +20,26 @@ export default function About() {
           <h2 className="text-5xl font-bold mb-6 text-gray-800">About Me</h2>
           <div className="text-lg text-gray-700 mb-6">
             <p>
-              Hi, I’m Miguel, and I am a 1st-generation, Latino Software
-              Engineer with an interest in all things artistic and a passion for
-              working with game design and effectiveness. Before beginning my
-              transition to software engineering, I worked in both in-store and
-              online retail as a technical support specialist in e-commerce.
-              Simultaneously, I became a webmaster, taking care of the company’s
-              website by updating and cleaning up the webpage in HTML and CSS to
-              meet clients’ needs, which gave me a keen eye for detail and
-              precision. As I’ve collaborated on apps related to productivity
-              and efficiency, I’m looking forward to further developing my
-              design and coding skills with my passion for gamification to build
-              long-lasting resources for future generations to come.
+              Hello! I'm a Software Engineer with a deep-rooted passion for the
+              intersection of technology and creativity, particularly within the
+              game industry. My journey began in e-commerce, where I provided
+              technical support and served as a webmaster, refining websites
+              with precision and an eye for detail.
             </p>
             <p>
-              In my spare time, I like to watch comedy and action movies or get
-              outdoors such as finding new hiking trails or seeing new sights.
-              While at home, I would play video games and watch anime. I’m also
-              a big sports fan: soccer, hockey, basketball, football, and
-              baseball.
+              My experiences have cultivated a strong foundation in HTML and CSS
+              and a customer-centric approach to problem-solving. But it's not
+              just about the code - it's about the impact. I'm fascinated by the
+              potential of technology in diverse fields such as healthcare,
+              aviation, robotics, climate change, and space exploration.
+            </p>
+            <p>
+              Today, I'm channeling my passion for gamification and my broad
+              tech interests into creating innovative software solutions. I'm
+              excited to leverage my skills and curiosity to contribute to
+              meaningful advancements in these sectors. I believe in the power
+              of technology to shape our future, and I'm ready to be part of
+              that journey.
             </p>
           </div>
           <div className="flex justify-center mt-4">
