@@ -13,7 +13,7 @@ export default function Skills() {
             At General Assembly, I learned and utilized a variety of tech stacks
             and tools, which include:
           </h3>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 list-disc list-inside text-gray-800">
+          <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 list-disc list-inside text-gray-800">
             <li>HTML5</li>
             <li>CSS3</li>
             <li>JavaScript</li>
@@ -56,7 +56,7 @@ export default function Skills() {
             At Westwood College, I learned and utilized a variety of tech stacks
             and tools, which include:
           </h3>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 list-disc list-inside text-gray-800">
+          <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-4 list-disc list-inside text-gray-800">
             <li>3ds Max</li>
             <li>After Effects</li>
             <li>Illustrator</li>
@@ -69,7 +69,7 @@ export default function Skills() {
             I am expanding my knowledge and skills by learning additional tech
             stacks and tools:
           </h3>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 list-disc list-inside text-gray-800">
+          <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 list-disc list-inside text-gray-800">
             <li>Angular</li>
             <li>Apache</li>
             <li>Astro</li>
