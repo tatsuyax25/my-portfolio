@@ -1,4 +1,6 @@
 // components/NavBar.js
+'use client';
+
 import React, { useState } from "react";
 import Link from "next/link";
 
@@ -11,30 +13,40 @@ export default function NavBar() {
 
   return (
     <nav className="bg-gray-800 p-4">
-      <ul className={`flex ${isOpen ? "flex-col" : "flex-row"} gap-4`}>
+      <div className="flex justify-between items-center">
+        <div className="text-white">Miguel's Portfolio</div>
+        <button className="text-white md:hidden" onClick={toggleMenu}>
+          ☰
+        </button>
+      </div>
+      <ul
+        className={`flex-col md:flex md:flex-row gap-4 ${
+          isOpen ? "flex" : "hidden"
+        }`}
+      >
         <li>
-          <Link href="/" passHref>
-            <a className="text-white">Home</a>
+          <Link href="/" className="text-white">
+            Home
           </Link>
         </li>
         <li>
-          <Link href="/about" passHref>
-            <a className="text-white">About</a>
+          <Link href="/about" className="text-white">
+            About
           </Link>
         </li>
         <li>
-          <Link href="/skills" passHref>
-            <a className="text-white">Skills</a>
+          <Link href="/skills" className="text-white">
+            Skills
           </Link>
         </li>
         <li>
-          <Link href="/projects" passHref>
-            <a className="text-white">Projects</a>
+          <Link href="/projects" className="text-white">
+            Projects
           </Link>
         </li>
         <li>
-          <Link href="/contact" passHref>
-            <a className="text-white">Contact</a>
+          <Link href="/contact" className="text-white">
+            Contact
           </Link>
         </li>
       </ul>
