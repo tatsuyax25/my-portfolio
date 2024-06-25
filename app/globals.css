@@ -40,3 +40,54 @@ body {
 .shadow-md {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0, 0.08);
 }
+
+/* Background style for popping circles */
+.popping-circles {
+  position: relative;
+  overflow: hidden;
+}
+
+.popping-circles::before,
+.popping-circles::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circles, rgba(255, 255, 255, 0.2) 10%, transparent 10%);
+  background-size: 10px 10px;
+  animation: move 10s linear infinite;
+}
+
+.popping-circles::after {
+  animation-delay: -5s;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Background styles for wavy lines */
+.wavy-lines {
+  background: linear-gradient(to right, #e0f7fa 25%, transparent 25%) 0 0,
+              linear-gradient(to right, #e0f7fa 25%, transparent 25%) 0 50%,
+              linear-gradient(to left, #e0f7fa 25%, transparent 25%) 50% 0,
+              linear-gradient(to left, #e0f7fa 25%, transparent 25%) 50% 50%;
+  background-size: 50px 50px;
+  animation: wave 5s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0 0, 0 50%, 50% 0, 50% 50%;
+  }
+  100% {
+    background-position: 50px 0, 50px 50%, 0 0, 0 50%;
+  }
+}
