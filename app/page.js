@@ -1,3 +1,6 @@
+import React from "react";
+import '../app/globals.css';
+
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 py-10">
