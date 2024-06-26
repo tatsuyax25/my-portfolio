@@ -1,20 +1,20 @@
+'use client';
 import { useState, useEffect } from 'react';
 
 const useTypingEffect = (text, speed = 100) => {
   const [displayText, setDisplayText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    let i = 0;
-    const timer = setInterval(() => {
-      setDisplayText((prev) => prev + text[i]);
-      i++;
-      if (i >= text.length) {
-        clearInterval(timer);
-      }
-    }, speed);
+    if (currentIndex < text.length) {
+      const timer = setTimeout(() => {
+        setDisplayText((prev) => prev + text[currentIndex]);
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      }, speed);
 
-    return () => clearInterval(timer);
-  }, [text, speed]);
+      return () => clearTimeout(timer);
+    }
+  }, [text, speed, currentIndex]);
 
   return displayText;
 };

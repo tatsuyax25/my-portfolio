@@ -1,15 +1,20 @@
+'use client';
 import React from "react";
+import useTypingEffect from "../hooks/useTypingEffect";
 import '../app/globals.css';
 
 export default function Home() {
+  const title = useTypingEffect("Welcome to My Portfolio", 100);
+  const subtitle = useTypingEffect("Hi, I'm Miguel Urena, a Sotfware Engineer.", 100);
+
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 py-10">
       <section className="text-center mb-10">
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 text-gray-800">
-          Welcome to My Portfolio
+          {title}
         </h1>
         <p className="text-xl sm:text-2xl md:text-3xl text-gray-600 mb-6">
-          Hi, I'm Miguel Urena, a Sotfware Engineer.
+          {subtitle}
         </p>
         <a
           href="/about"
