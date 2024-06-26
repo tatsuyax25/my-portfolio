@@ -4,8 +4,8 @@ import useTypingEffect from "../hooks/useTypingEffect";
 import '../app/globals.css';
 
 export default function Home() {
-  const title = useTypingEffect("Welcome to My Portfolio", 100);
-  const subtitle = useTypingEffect("Hi, I'm Miguel Urena, a Sotfware Engineer.", 100);
+  const title = useTypingEffect(["Welcome to My Portfolio"], 100)[0];
+  const subtitle = useTypingEffect(["Hi, I'm Miguel Urena, a Sotfware Engineer."], 100)[0];
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 py-10">
